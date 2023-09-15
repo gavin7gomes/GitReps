@@ -4,7 +4,7 @@ import { SET_USER_CREDENTIALS } from "../types";
 
 export const fetchGithubAccessToken = ({code}) => async (dispatch) => {
     axios
-      .get("http://ec2-52-90-180-75.compute-1.amazonaws.com:4000/getAccessToken?code=" + code)
+      .get("ec2-52-90-180-75.compute-1.amazonaws.com:4000/getAccessToken?code=" + code)
       .then((response) => {
         const accessToken = response.data.access_token
         if (accessToken) {
@@ -57,7 +57,7 @@ export const fetchGithubUserData = () => async (dispatch, getState) => {
   const token = accessToken || localStorage.getItem("githubAccessToken");
 
   axios
-    .get("http://ec2-52-90-180-75.compute-1.amazonaws.com:4000/getUserData", {
+    .get("ec2-52-90-180-75.compute-1.amazonaws.com:4000/getUserData", {
       headers: {
         'Authorization': `Bearer ${token}`,
       }})
