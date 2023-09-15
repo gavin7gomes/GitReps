@@ -21,11 +21,15 @@ Follow these steps to clone, install dependencies, and run the React app:
    git clone https://github.com/gavin7gomes/GitReps.git
 
 2. **Navigate to the root directory
+   
+   ```bash
    cd GitReps/
 
    
-3. **npm install
+3. ```bash
+   npm install
 
  
-4. **npm start
+4. ```bash
+   **npm start
 
