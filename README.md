@@ -31,5 +31,5 @@ Follow these steps to clone, install dependencies, and run the React app:
 
  
 4. ```bash
-   **npm start
+   npm start
 
