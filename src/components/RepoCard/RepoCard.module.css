@@ -1,0 +1,92 @@
+.repository-card {
+    display: flex;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+    font-family: Arial, sans-serif;
+  }
+  
+  .repository-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .avatar {
+    flex: 0 0 60px;
+    margin-right: 16px;
+  }
+  
+  .avatar img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .repository-card:hover .avatar img {
+    transform: scale(1.1);
+  }
+  
+  .repo-info {
+    flex: 1;
+  }
+  
+  .repo-name {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+  
+  .stars-container {
+    display: flex;
+    align-items: center;
+    color: #6a737d;
+    margin-bottom: 8px;
+  }
+  
+  .star-icon {
+    margin-right: 4px;
+    font-size: 18px;
+  }
+  
+  .description {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.2;
+    max-height: 3.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .repository-card:hover .description {
+    opacity: 1;
+  }
+  
+  .language {
+    color: #6a737d;
+    margin-bottom: 8px;
+  }
+  
+  .updated-at {
+    color: #6a737d;
+  }
+  
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .topic-badge {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
