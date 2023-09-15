@@ -57,7 +57,7 @@ const RepositoriesPage = (props) => {
 
   const handleLogin = () => {
     const clientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
-    const redirectUri = "https://gitreps.netlify.app/";
+    const redirectUri = "https://gitreps.netlify.app";
     window.location.href = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}`;
   };
 
